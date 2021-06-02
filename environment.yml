@@ -1,0 +1,10 @@
+name: lets-plot-pycharm-samples
+channels:
+  - defaults
+dependencies:
+  - python=3.7
+  - ipython
+  - numpy
+  - geopandas
+  - pip:
+    - lets-plot
