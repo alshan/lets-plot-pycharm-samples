@@ -1,13 +1,13 @@
 # lets-plot-pycharm-samples
 
-This project contains demo scripts showing Lets-Plot interactive charts in PyCharm SciView:
+This project contains a couple of scripts which demonstrate plotting in PyCharm SciView using the Lets-Plot plotting library:
 
-- `density_plot.py` : an example of a simple density plot.
+- `density_plot.py` : a simple density plot.
 - `interactive_map.py` : an interactive map showing locations of the major JetBrains offices worldwide.
 
 ## How to use
 
-- Create new conda environment "lets-plot-pycharm-samples" specified in the included `environment.yml` file:
+- Create new conda environment "lets-plot-pycharm-samples" specified in the `environment.yml` (included):
 
 `conda env create -f environment.yml`  
 
