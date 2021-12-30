@@ -9,7 +9,7 @@ LetsPlot.set(maptiles_lets_plot(theme='dark'))
 # Data
 
 # List of major JetBrains offices.
-# Note: the offices capacity is just my guess.
+# Note: the office capacity is just my guess.
 offices = [
     ["Prague", "CZ", "Headquarters", 100],
     ["Petersburg", "Russia", "R&D Center", 1000],
