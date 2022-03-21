@@ -41,19 +41,18 @@ city_geocoder = geocode_cities(dat['city']).countries(dat['country'])
 # An interactive map showing JetBrains major offices worldwide.
 
 p = (ggplot(dat) +
-     geom_livemap() +
+     geom_livemap(data_size_zoomin=5) +
      geom_point(
          aes(color='kind', shape='kind', size='size'),
          map_join=['city', 'city'],
          map=city_geocoder.get_centroids(),
          tooltips=layer_tooltips()
-             .line('@kind')
-             .line('@city (@country)')
+             .title('@kind\n@city (@country)')
              .line("Capacity|@size")
              .format('size', ".0f")
-             .min_width(100)
-             .color('black')) +
+             .min_width(100)) +
      scale_size(range=[5, 30]) +
-     guides(size='none'))
+     guides(size='none') +
+     theme(legend_position=[0, 0], legend_justification=[0,0]))
 
 p.show()
